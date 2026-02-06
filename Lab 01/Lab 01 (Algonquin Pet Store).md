@@ -32,15 +32,6 @@ The Store Front is the actual website customers see and use. It's where people b
 
 Built with **Vue.js**, a lightweight and powerful JavaScript framework, it's perfect for creating dynamic UIs that update instantly. Vue.js is chosen because it's beginner-friendly yet powerful for modern web apps. In the microservices design, this is the frontend layer running on port 8080. It talks to the Product Service to show items and Order Service to submit purchases using simple HTTP requests, while RabbitMQ handles the behind-the-scenes reliable order processing.
 
----
-
-## Challenges and Learnings (Optional)
-
-[Add your own text here if you want — examples:  
-- "The hardest part was opening the correct ports in the Azure NSG and making sure the priorities didn't conflict. I solved it by following the exact priority numbers from the lab instructions."  
-- "I learned a lot about microservices — how breaking an app into small services makes it easier to maintain and scale. Also, using RabbitMQ for queuing was eye-opening for handling asynchronous tasks."  
-- "Connecting via VS Code Remote-SSH was tricky at first with the SSH key permissions, but chmod 400 fixed it quickly."  
-
----
+-----
 
 Thanks for checking out my submission!
