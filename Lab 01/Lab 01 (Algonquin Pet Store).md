@@ -8,7 +8,7 @@
 
 ## Demo Video
 
-[Watch Demo Video]([text](https://www.youtube.com/watch?v=jZrZi_7XXVU))
+[Watch Demo Video](https://youtu.be/jZrZi_7XXVU?si=5OezeUPl5PHd6pSq)
 
 ---
 
