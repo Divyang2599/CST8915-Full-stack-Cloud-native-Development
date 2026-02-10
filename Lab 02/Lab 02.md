@@ -1,4 +1,4 @@
-# CST8915 Lab 1: Refactoring for 12-Factor Compliance
+# CST8915 Lab 2: Refactoring for 12-Factor Compliance
 
 **Student Name:** Divyang Lodariya 
 **Student ID:** 041267824
