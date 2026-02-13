@@ -1,9 +1,11 @@
 # CST8915 Lab 3: Deploying the Algonquin Pet Store on Azure
 
-**Student Name:** Divyang Lodariya 
+**Student Name:** Divyang Lodariya
+
 **Student ID:** 041267824
 
-**Course:** CST8915 Full-stack Cloud-native Development  
+**Course:** CST8915 Full-stack Cloud-native Development
+
 **Semester:** Winter 2026
 
 ## Demo Video
