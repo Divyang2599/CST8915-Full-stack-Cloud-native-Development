@@ -14,8 +14,6 @@
 
 ## Reflection Questions
 
-## Reflection Questions
-
 **i. What are the main differences between a Docker image and a Docker container?**  
 A Docker image is a static, read-only template like a blueprint or a packaged snapshot that contains the application code, runtime, libraries, dependencies, and configurations needed to run the software. It is immutable and built from a Dockerfile with layered instructions. A Docker container, on the other hand, is a runnable instance of that image it also adds a thin writable layer on top of the image's read-only layers, allowing the application to execute, make temporary changes, and maintain its own isolated filesystem and processes. The key difference is that images are shareable and reusable while containers are environments that can be started, stopped, or deleted without affecting the underlying image.
 
