@@ -1,6 +1,6 @@
 # Lab 6 - Deploy Algonquin Pet Store to Azure Kubernetes Service (AKS)
 **Course:** CST8915 Full-Stack Cloud-Native Development  
-**Student:** Divya  
+**Student:** Divyang Lodariya
 **College:** Algonquin College  
 
 ---
