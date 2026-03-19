@@ -17,7 +17,7 @@
 
 ## Demo Video
 
-▶️ **[Watch the Lab 5 Demo on YouTube](https://www.youtube.com/watch?v=REPLACE_WITH_YOUR_LINK)**
+▶️ **[Watch the Lab 5 Demo on YouTube](https://youtu.be/XAlmdphnK0M?si=jqx-PoyhLqegrV4s)**
 
 > The demo covers: building Docker images, running all services with Docker Compose, and placing a live order on the Algonquin Pet Store running on an Azure VM.
 
