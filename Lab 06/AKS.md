@@ -9,7 +9,7 @@
 
 [![Lab 6 Demo Video](https://img.shields.io/badge/YouTube-Watch%20Demo-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=REPLACE_WITH_YOUR_LINK)
 
-> 🔗 **Video Link:** https://www.youtube.com/watch?v=REPLACE_WITH_YOUR_LINK
+> 🔗 **Video Link:** https://youtu.be/AmM9L4GlZLE?si=p_i1Zz7iH1jd6PbL
 
 ---
 
