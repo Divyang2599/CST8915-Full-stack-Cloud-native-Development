@@ -1,7 +1,7 @@
 # Lab 7 - CST8915: Introduction to Kubernetes Basics
 
 ## Demo Video
-🎥 [YouTube Demo Video](https://youtube.com/your-link-here)
+🎥 [YouTube Demo Video](https://youtu.be/WqknqZehh_k?si=VIq2FQJ_48xRKm0p)
 
 
 ---
