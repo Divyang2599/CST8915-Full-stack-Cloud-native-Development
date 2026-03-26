@@ -2,7 +2,7 @@
 
 ## Demo Video
 🎥 [YouTube Demo Video](https://youtube.com/your-link-here)
-> Replace the link above with your actual YouTube video link after uploading.
+
 
 ---
 
