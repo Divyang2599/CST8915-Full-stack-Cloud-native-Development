@@ -34,7 +34,7 @@ The Store Front was accessible via the LoadBalancer external IP at `http://20.10
 
 **RabbitMQ is a stateful application.**
 
-A stateless application holds no critical data internally — you can kill it and restart it with zero data loss because the data lives elsewhere (a database, a file system, etc.). RabbitMQ is fundamentally different. It *is* the data store for messages. It maintains queues, exchanges, bindings, and unprocessed messages in its internal storage. When RabbitMQ goes down, everything it was holding goes with it.
+A stateless application holds no critical data internally you can kill it and restart it with zero data loss because the data lives elsewhere (a database, a file system, etc.). RabbitMQ is fundamentally different. It *is* the data store for messages. It maintains queues, exchanges, bindings, and unprocessed messages in its internal storage. When RabbitMQ goes down, everything it was holding goes with it.
 
 A real-world analogy: RabbitMQ is like a post office that holds undelivered packages inside its building. If the building is destroyed, every package waiting for delivery is permanently lost.
 
@@ -60,7 +60,7 @@ Without a PersistentVolume, RabbitMQ stores all its data in the container's **ep
 - No data is written to durable external storage
 - The moment the container is destroyed, all data is permanently gone
 
-In production, this is catastrophic. Orders placed by customers, payment confirmations, notification events — anything sitting in the queue between being published and being consumed is wiped on every pod restart.
+In production, this is catastrophic. Orders placed by customers, payment confirmations, notification events, and  anything sitting in the queue between being published and being consumed is wiped on every pod restart.
 
 ---
 
@@ -68,9 +68,9 @@ In production, this is catastrophic. Orders placed by customers, payment confirm
 
 This was demonstrated live during the lab:
 
-**Before restart:** An order was placed through the Store Front (4x Dog Food, Total: $79.96). The RabbitMQ dashboard confirmed **Queues: 1, Ready: 1** — the order message was sitting in the queue waiting to be processed.
+**Before restart:** An order was placed through the Store Front (4x Dog Food, Total: $79.96). The RabbitMQ dashboard confirmed **Queues: 1, Ready: 1**. The order message was sitting in the queue waiting to be processed.
 
-**After pod deletion/restart:** The RabbitMQ pod was deleted. Kubernetes automatically restarted it (because it is managed by a Deployment controller). However, the new pod started with a completely fresh ephemeral filesystem. Upon logging back into the RabbitMQ management UI, the dashboard showed **Queues: 0** — the order was permanently lost.
+**After pod deletion/restart:** The RabbitMQ pod was deleted. Kubernetes automatically restarted it (because it is managed by a Deployment controller). However, the new pod started with a completely fresh ephemeral filesystem. Upon logging back into the RabbitMQ management UI, the dashboard showed **Queues: 0**,  the order was permanently lost.
 
 This was also observed when the AKS cluster was stopped overnight and restarted the next day. All previously queued messages were gone, confirming that no data survived the pod lifecycle.
 
@@ -113,7 +113,7 @@ With this setup, RabbitMQ's data directory is backed by an Azure Managed Disk th
 
 **Solution 2: Replace RabbitMQ with Azure Service Bus (cloud-native)**
 
-Instead of self-managing a message broker inside Kubernetes, delegate the responsibility entirely to Azure Service Bus — a fully managed enterprise messaging service. The Order Service would publish messages to a Service Bus Queue instead of RabbitMQ, and a consumer would read from it.
+Instead of self-managing a message broker inside Kubernetes, delegate the responsibility entirely to Azure Service Bus, a fully managed enterprise messaging service. The Order Service would publish messages to a Service Bus Queue instead of RabbitMQ, and a consumer would read from it.
 
 ---
 
